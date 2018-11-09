@@ -1,7 +1,6 @@
 <html>
 
 <head>
-
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <!-- scripts -->
@@ -9,35 +8,50 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <script src="./js/main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-
+    <!-- meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ross McMurray - Web Designer/Front End Engineer</title>
 </head>
-
 <body>
-
     <div class="container">
         <div class="sky">
             <header>
-                
                 <div class="logo">
-                    <h1><code><h1>< R/></h1></code></h1>
+                    <h1>
+                        <img class="avatar" src="images/avatar.svg" width="50px" />
+                    </h1>
                 </div>
-                <nav>
+               
+                <nav> 
                     <a href="#">About</a>
+                    <a href="#">Skills</a>
                     <a href="#">Work</a>
                     <a href="#">Contact</a>
                 </nav>
+
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                      <div class="spinner diagonal part-1"></div>
+                      <div class="spinner horizontal"></div>
+                      <div class="spinner diagonal part-2"></div>
+                    </label>
+                    <div id="sidebarMenu">
+                      <ul class="sidebarMenuInner">
+                        <li>Ross McMurray <span>Web Developer</span></li>
+                        <li><a href="#about" target="_blank">About</a></li>
+                        <li><a href="#skills" target="_blank">Skills</a></li>
+                        <li><a href="#work" target="_blank">Work</a></li>
+                        <li><a href="#contact" target="_blank">Contact</a></li>
+                      </ul>
+                    </div>
             </header>
             <div class="title centered">
                 <h1>I'm Ross...</h1>
                 <h2>A user interface specialist.</h2>
             </div>
             <svg viewBox="0 0 1575 946" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-                <desc>Created with Sketch.</desc>
-                <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Artboard">
 
@@ -210,29 +224,35 @@
             </svg>
         </div>
         <div class="section">
-            <img class="avatar" src="images/avatar.svg"/>
+            <div class="sectionContent">
+            <img class="avatar" src="images/avatar.svg" />
             <h1>Designer and Front-end Developer</h1>
             <p>I design and devlop beautiful interfaces</p>
             <!-- <div class="container"><img class="is-bottom" src="images/illustration.png"></div> -->
         </div>
+    </div>
 
         <section class="about is-white has-text-centered">
             <div class="about-body">
-              <div class="container">
-                <div class="columns is-centered">
-                  <div class="column">
-                    <h1 class="aboutTitle">Hi...Im Ross</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  </div>
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column">
+                            <h1 class="aboutTitle">Hi...Im Ross</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                                in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                Ipsum.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="about-foot">
-              
-            </div>
-          </section>
+            <div class="about-foot"></div>
+        </section>
 
-          <div class="skills">
+        <div class="skills">
             <div class="skills-body">
                 <!-- <div class="skills-title">
                     <h1>My Skills</h1>
@@ -240,104 +260,109 @@
                 <div class="skills-content">
                     <div class="skills-column">
                         <i class="fas fa-pencil-ruler"></i>
-                    <h2>Designer</h2>
-                    <p>I like simple, clean designs, with good structures and content.</p>
-                    <h3>Things I enjoy creating:</h3>
-                    <p>UX, UI, Apps, Interactice Interfaces, Websites</p>
-                    <h3>Design Tools:</h3>
-                    <ul>
-                        <li>Sketch</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Adobe Photoshop</li>
-                        <li>Zeplin</li>
-                        <li>Pen and Paper</li>
-                    </ul>
+                        <h2>Designer</h2>
+                        <p>I like simple, clean designs, with good structures and content.</p>
+                        <h3>Things I enjoy creating:</h3>
+                        <p>UX, UI, Apps, Interactice Interfaces, Websites</p>
+                        <h3>Design Tools:</h3>
+                        <ul>
+                            <li>Sketch</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Zeplin</li>
+                            <li>Pen and Paper</li>
+                        </ul>
                     </div>
                     <div class="skills-column">
-                            <i class="fas fa-code"></i>
+                        <i class="fas fa-code"></i>
                         <h2>Front-end Developer</h2>
-                    <p>I like a challenge meaning I normally code things from scratch</p>
-                    <h3>Languages I use:</h3>
-                    <p>HTML, CSS, Javascript, React, Sass, Git, Greensock</p>
-                    <h3>Design Tools:</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Github</li>
-                        <li>Visual Studio Code</li>
-                        <li>Codepen</li>
-                        <li>Bootstrap</li>
-                        <li>Atom</li>
-                    </ul>
+                        <p>I like a challenge meaning I normally code things from scratch</p>
+                        <h3>Languages I use:</h3>
+                        <p>HTML/CSS, Javascript, React, Sass, Greensock</p>
+                        <h3>Design Tools:</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>Github</li>
+                            <li>Visual Studio Code</li>
+                            <li>Codepen</li>
+                            <li>Bootstrap</li>
+                            <li>Atom</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-          </div>
-          
+        </div>
 
-    <div class="work">
+        <div class="work">
             <div class="work-title">
-                    <h1>My Work</h1>
-                    <p>A few examples of my work....</p>
-                </div>
-        <div class="work-body">
-       
-        
-           
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>   
+                <h1>My Work</h1>
+                <p>A few examples of my work....</p>
+            </div>
+            <div class="work-body">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
         </div>
 
         <div class="social">
-            <h2>Find me on....</h2>
+            <h1>Find me on..</h1>
             <div class="social-icons">
-                <a href=""><i class="fab fa-twitter-square"></i></a>
-                <a href=""><i class="fab fa-facebook-square"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href="">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
 
         <div class="contact">
             <div class="contact-body">
-                <form>
-                        <img class="avatar" src="images/avatar.svg" width="20%"/>
-                <h1>Get in Contact with me...</h1>
-                <label>Name:</label>
-                <input type="text" name="name"/>
-                <label>Email:</label>
-                <input type="email" name="email"/>
-                <label>Phone(optional):</label>
-                <input type="tel" name="phone"/>
-                <label>Additional Details:</label>
-                <textarea name="message" rows="10" cols="30" name="details"></textarea>
-                <input type="submit" name="submit"/>
-            </form>
-            
+                <form action="mailto:r.mcmurray1@hotmail.co.uk" method="get">
+                    <img class="avatar" src="images/avatar.svg" width="20%" />
+                    <h1>Contact me...</h1>
+                    <label>Name:</label>
+                    <input type="text" name="name" />
+                    <label>Email:</label>
+                    <input type="email" name="email" />
+                    <label>Phone(optional):</label>
+                    <input type="tel" name="phone" />
+                    <label>Additional Details(optional):</label>
+                    <textarea name="message" rows="10" cols="30" name="details"></textarea>
+                    <input type="submit" name="submit" />
+                </form>
             </div>
-            <div class="imageContainer" >
-                <img src="images/illustration.png" width="100%"/>
-            </div>
-            </div>
-            <div class="footer">
-                <h1><code><h3>< R/></h1></code></h3>
-                <div class="social-icons">
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
-                    <a href=""><i class="fab fa-facebook-square"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                </div>
-                <p>Designed and Developed by Me</p>
-                
+            <div class="imageContainer">
+                <img src="images/illustration.png" width="100%" />
             </div>
         </div>
-    
-
+        <div class="footer">
+            <h1>
+                <code><h3>< R/></h1></code>
+                </h3>
+                <div class="social-icons">
+                    <a href="">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <p>Designed and Developed by Me</p>
+                <p>@ 2018 Ross McMurray.</p>
+        </div>
+    </div>
 </body>
-
 
 <script>
     $(function () {
@@ -356,8 +381,8 @@
             $bigCircle = $('#bigCircle'),
             $smallCircle = $('#smallCircle');
 
-            //     timelines
-            tlClouds = new TimelineMax({ repeat: -1 }),
+        //     timelines
+        tlClouds = new TimelineMax({ repeat: -1 }),
             tlSun = new TimelineMax({ repeat: -1 }),
             daytl = new TimelineMax({ repeat: -1 }),
             tlMoon = new TimelineMax({ repeat: -1 }),
@@ -367,7 +392,7 @@
 
 
 
-        tlClouds.set($clouds, { x: 1900 });
+            tlClouds.set($clouds, { x: 1900 });
         tlClouds.to($clouds, 50, { x: -1500, ease: Power0.easeNone });
 
 
@@ -385,7 +410,7 @@
         tlCar.set($car, { x: -400 });
 
         tlCar.to($car, 10, { x: 2400, ease: Power0.easeOut, delay: 2 });
-        
+
 
         logotl.from($open, 0.2, { opacity: 0 }, 0.2);
         logotl.from($R, 0.2, { opacity: 0 }, 0.4);
