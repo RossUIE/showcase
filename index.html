@@ -25,10 +25,10 @@
                 </div>
                
                 <nav> 
-                    <a href="#">About</a>
-                    <a href="#">Skills</a>
-                    <a href="#">Work</a>
-                    <a href="#">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
                 </nav>
 
                 <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
@@ -40,10 +40,10 @@
                     <div id="sidebarMenu">
                       <ul class="sidebarMenuInner">
                         <li>Ross McMurray <span>Web Developer</span></li>
-                        <li><a href="#about" target="_blank">About</a></li>
-                        <li><a href="#skills" target="_blank">Skills</a></li>
-                        <li><a href="#work" target="_blank">Work</a></li>
-                        <li><a href="#contact" target="_blank">Contact</a></li>
+                        <li><a href="#about" >About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
                       </ul>
                     </div>
             </header>
@@ -223,11 +223,11 @@
                 </g>
             </svg>
         </div>
-        <div class="section">
+        <div class="section" id="about">
             <div class="sectionContent">
             <img class="avatar" src="images/avatar.svg" />
             <h1>Designer and Front-end Developer</h1>
-            <p>I design and devlop beautiful interfaces</p>
+            <h3>I design and devlop beautiful interfaces</h3>
             <!-- <div class="container"><img class="is-bottom" src="images/illustration.png"></div> -->
         </div>
     </div>
@@ -252,8 +252,8 @@
             <div class="about-foot"></div>
         </section>
 
-        <div class="skills">
-            <div class="skills-body">
+        <div class="skills" >
+            <div class="skills-body" id="skills">
                 <!-- <div class="skills-title">
                     <h1>My Skills</h1>
                 </div> -->
@@ -263,7 +263,13 @@
                         <h2>Designer</h2>
                         <p>I like simple, clean designs, with good structures and content.</p>
                         <h3>Things I enjoy creating:</h3>
-                        <p>UX, UI, Apps, Interactice Interfaces, Websites</p>
+                        <ul>
+                            <li>UX</li>
+                            <li>UI</li>
+                            <li>Apps</li>
+                            <li>Interactice Interfaces</li>
+                            <li>Websites</li>
+                        </ul>
                         <h3>Design Tools:</h3>
                         <ul>
                             <li>Sketch</li>
@@ -278,7 +284,13 @@
                         <h2>Front-end Developer</h2>
                         <p>I like a challenge meaning I normally code things from scratch</p>
                         <h3>Languages I use:</h3>
-                        <p>HTML/CSS, Javascript, React, Sass, Greensock</p>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>Sass</li>
+                            <li>Greensock</li>
+                        </ul>
                         <h3>Design Tools:</h3>
                         <ul>
                             <li>Git</li>
@@ -293,7 +305,7 @@
             </div>
         </div>
 
-        <div class="work">
+        <div class="work" id="work">
             <div class="work-title">
                 <h1>My Work</h1>
                 <p>A few examples of my work....</p>
@@ -308,7 +320,7 @@
             </div>
         </div>
 
-        <div class="social">
+        <div class="social" id="contact">
             <h1>Find me on..</h1>
             <div class="social-icons">
                 <a href="">
@@ -325,7 +337,7 @@
 
         <div class="contact">
             <div class="contact-body">
-                <form action="mailto:r.mcmurray1@hotmail.co.uk" method="get">
+                <form action="mailto:r.mcmurray1@hotmail.co.uk" method="POST">
                     <img class="avatar" src="images/avatar.svg" width="20%" />
                     <h1>Contact me...</h1>
                     <label>Name:</label>
@@ -340,7 +352,7 @@
                 </form>
             </div>
             <div class="imageContainer">
-                <img src="images/illustration.png" width="100%" />
+                <img src="images/illustrationMine.png" width="100%" />
             </div>
         </div>
         <div class="footer">

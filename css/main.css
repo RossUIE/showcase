@@ -1,3 +1,88 @@
+html {
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.sky {
+  width: 100%;
+  background-color: #87ceeb;
+  position: relative;
+}
+
+svg {
+  max-height: 100vh;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo {
+  flex: 0.25;
+  color: #fff;
+  font-size: 0.5rem;
+  align-self: center;
+  justify-content: flex-start;
+}
+
+nav {
+  margin-left: auto;
+  align-self: center;
+  display: flex;
+  padding-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  color: #8c43ff;
+}
+
+nav i {
+  font-size: 1.5rem;
+}
+.side {
+  display: none;
+}
 
 #sidebarMenu {
   height: 100%;
@@ -106,89 +191,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top: -9px;
 }
 
-
-html {
-  font-size: 16px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Cairo", sans-serif;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-}
-
-.sky {
-  width: 100%;
-  background-color: #87ceeb;
-  position: relative;
-}
-
-svg {
-  max-height: 100vh;
-}
-
-p {
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-header {
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.logo {
-  flex: 0.25;
-  color: #fff;
-  font-size: 0.5rem;
-  align-self: center;
-  justify-content: flex-start;
-}
-
-nav {
-  margin-left: auto;
-  align-self: center;
-  display: flex;
-  padding-right: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-}
-
-nav a:hover {
-  color: #8c43ff;
-}
-
-nav i {
-  font-size: 1.5rem;
-}
-.side {
-  display: none;
-}
-
 .contact-btn {
   border-radius: 30px;
   background-color: transparent;
@@ -263,14 +265,6 @@ nav i {
   margin-bottom: 0;
 }
 
-.section p {
-  font-size: 1.2rem;
-}
-
-.column p {
-  font-size: 1.2rem;
-}
-
 .about {
   align-items: stretch;
   display: flex;
@@ -289,7 +283,7 @@ nav i {
   max-width: 1100px;
   width: 100%;
   margin: auto;
-  text-align: justify;
+  text-align: center;
 }
 
 .about-body {
@@ -426,7 +420,6 @@ i {
 .skills-column p {
   text-align: center;
   margin: 0;
-  font-size: 18px;
 }
 
 .skills-column h3 {
