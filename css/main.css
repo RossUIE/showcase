@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 * {
@@ -9,7 +9,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Cairo", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -21,24 +21,12 @@ body {
 
 .sky {
   width: 100%;
-  background-color: #87ceeb;
+  background-color: #79C5E5;
   position: relative;
 }
 
 svg {
   max-height: 100vh;
-}
-
-p {
-  font-size: 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-weight: 100;
 }
 
 header {
@@ -48,8 +36,7 @@ header {
   top: 0;
   left: 0;
   display: flex;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .logo {
@@ -58,6 +45,7 @@ header {
   font-size: 0.5rem;
   align-self: center;
   justify-content: flex-start;
+  font-family: "Kaushan Script", cursive;
 }
 
 nav {
@@ -74,121 +62,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #8c43ff;
-}
-
-nav i {
-  font-size: 1.5rem;
-}
-.side {
-  display: none;
-}
-
-#sidebarMenu {
-  height: 100%;
-  position: fixed;
-  left: 0;
-  width: 250px;
-  transform: translateX(-250px);
-  transition: transform 250ms ease-in-out;
-  background: white;
-  z-index: 1;
-  top: 0;
-  
-}
-.sidebarMenuInner{
-  margin:0;
-  padding:0;
-}
-.sidebarMenuInner li{
-  list-style: none;
-  color: #8c43ff;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 20px;
-  cursor: pointer;
-  visibility: visible;
-}
-.sidebarMenuInner li span{
-  display: block;
-  font-size: 14px;
-  color: #6b7789;
-}
-.sidebarMenuInner li a{
-  color: black;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-}
-input[type="checkbox"]:checked ~ #sidebarMenu {
-  transform: translateX(0);
-}
-
-input[type=checkbox] {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  display: none;
-}
-.sidebarIconToggle {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  cursor: pointer;
-  position: absolute;
-  z-index: 99;
-  height: 100%;
-  width: 100%;
-  top: 22px;
-  right: 15px;
-  height: 22px;
-  width: 22px;
-  visibility: hidden;
-}
-.spinner {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
-}
-.horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 3px;
-}
-.diagonal.part-1 {
-  position: relative;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  float: left;
-}
-.diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 3px;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  opacity: 0;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(135deg);
-  margin-top: 8px;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(-135deg);
-  margin-top: -9px;
+  color: #E26868;
 }
 
 .contact-btn {
@@ -206,20 +80,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   border: #8c43ff;
 }
 
-.background {
-  background: #8b4dfb;
-  color: white;
-}
-
 .title {
   width: 40%;
   min-height: 100px;
 }
+
 .title h1 {
   font-size: 5rem;
-  font-style: italic;
   padding: 0;
-  margin-bottom: 0;
+  margin: 0;
   color: #fff;
   font-family: "Kaushan Script", cursive;
 }
@@ -266,14 +135,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 .about {
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 2rem;
-  background-color: #8c43ff;
+  background-color: #E26868;
   color: #fff;
-  min-height: 500px auto;
+  min-height: 350px;
+}
+.about_body {
+  padding: 20px 10px 115px 10px;
+  max-width: 1000px;
+  margin: auto;
+  
 }
 .has-text-centered {
   text-align: center !important;
@@ -284,35 +154,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   width: 100%;
   margin: auto;
   text-align: center;
-}
-
-.about-body {
-  padding-bottom: 50px;
-}
-.about-foot {
-  padding: 0rem 1.5rem;
-  margin-top: 100px;
-}
-.about-head,
-.about-foot {
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
-.container {
-  margin: 0 auto;
-  position: relative;
-}
-
-.about img {
-  height: auto;
-  max-width: 50%;
-  margin: auto;
-}
-
-.aboutTitle {
-  text-align: center;
-  margin: auto;
 }
 
 .work {
@@ -335,22 +176,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   text-align: center;
 }
 
-.work-title {
-  width: 80%;
-  min-height: 150px;
-  text-align: center;
-}
-
-.work-title p {
-  text-align: center;
-}
-
-.divider {
-  width: 100%;
-  height: 200px;
-  background-color: #8c43ff;
-}
-
 .item {
   display: inline-block;
   background-color: #444;
@@ -361,10 +186,53 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   height: 250px;
 }
 
-.item1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: red;
+/* services */
+
+.c-container-services {
+    background-color: #4a3f60;
+    padding: 120px 0;
+    color: white;
+}
+
+.service-items {
+  width: 960px;
+  margin: 5px auto;
+  transition: width .2s ease;
+}
+
+.service-items h5 {
+    margin-top: 65px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: left;
+}
+
+.service-items p {
+  width: 200px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ddd;
+    line-height: 20px;
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+article {
+    width: 460px;
+    height: 220px;
+    margin: 10px;
+    float: left;
+}
+
+figure {
+  width: 120px;
+    height: 113px;
+    float: left;
+    margin: 30px 60px 30px 0;
+    border-radius: 50%;
+    background-color: #443959;
+    padding: 47px 0px 0px 40px
 }
 
 .skills {
@@ -408,13 +276,16 @@ i {
 }
 
 .skills-column {
-  width: 50%;
   border-radius: 12px;
   height: auto;
   padding: 30px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
   text-align: center;
   background: #fff;
+}
+
+.skills-column li {
+  padding-bottom: 10px;
 }
 
 .skills-column p {
@@ -444,51 +315,67 @@ ul {
   margin-top: 60px;
 }
 
-.social-icons {
-  width: 200px;
-  min-height: 60px;
+.contact-social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 200px;
+  
+
 }
 
-.social-icons i {
-  color: #fff;
+.contact-social-icons i {
+  color: #84CBC5;
+  font-size: 30px;
+  padding: 10px 10px;
 }
 
-.contact {
+.c-container-contact {
   width: 100%;
-  min-height: 600px;
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  margin: 100px 0;
+  
 }
 
-.contact-body {
+.c-container-contact__content {
+  max-width: 600px;
+  margin: 0 auto;
   width: 100%;
-  max-width: 1100px;
-  min-height: 600px;
-  position: relative;
-  top: -100;
-  background: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding: 50px;
+  margin: 100px 0;
   margin: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
-  border-radius: 12px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+}
+
+.c-container-contact__content img {
+  width: 170px;
+}
+
+.c-container-contact__content p {
+  margin: 3px 0;
+  color: #A9A9A9;
+}
+
+.c-container-contact__content .contact-meta {
+  font-weight: bold;
 }
 
 label {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: rgba(41, 51, 71, 0.65);
   display: block;
   text-align: left;
+  padding-bottom: 3px;
+}
+
+.optional {
+  font-size: 14px;
 }
 
 input {
@@ -497,9 +384,11 @@ input {
   box-shadow: none;
   font-weight: 300;
   width: 100%;
-  padding: 15px;
+  padding: 12px 10px 11px 10px;
   display: block;
-  font-size: 1.4rem;
+  font-size: inherit;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 textarea {
@@ -508,52 +397,33 @@ textarea {
   color: #293347;
   box-shadow: none;
   font-weight: 300;
-  padding: 20px;
-  font-size: 1.4rem;
+  padding: 10px;
+  font-size: inherit;
+  border-radius: 8px;
 }
 input[type="submit"] {
   border-radius: 50px;
   background-color: transparent;
-  border-color: #8c43ff;
-  color: #8c43ff;
+  border-color: #84CBC5;
+  color: #84CBC5;
   margin-top: 30px;
   border-width: 2px;
-  max-width: 200px;
+  max-width: 150px;
   margin: auto;
   margin-top: 20px;
 }
 
-form {
-  width: 60%;
-  margin: auto;
-}
 
 input[type="submit"]:hover {
-  background: #8b4dfb;
+  background: #84CBC5;
   color: #fff;
   cursor: pointer;
 }
 
-.footer {
-  width: 100%;
-  min-height: 300px;
-  background: #8c43ff;
-  color: #dcc9fd;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer i {
-  color: #dcc9fd;
-  font-size: 30px;
-}
-
-.footer p {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 0;
+footer {
+    background-color: #3c4955;
+    color: white;
+    padding: 20px;
 }
 
 .imageContainer {
@@ -574,31 +444,9 @@ input[type="submit"]:hover {
   .sidebarIconToggle {
     visibility: visible;
   }
-  .about {
-    min-height: 600px;
-    height: auto;
-  }
-
-  .sectionContent img {
-    width: 200px;
-    height: 200px;
-  }
 
   .side {
     margin-right: 20px;
-  }
-
-  p {
-    font-size: 16px;
-    text-align: justify;
-  }
-
-  .column p {
-    font-size: 16px;
-  }
-
-  .skills-column p {
-    font-size: 16px;
   }
 
 .imageContainer {
@@ -608,32 +456,6 @@ input[type="submit"]:hover {
 
 nav a {
   display: none;
-}
-
-.title h1 {
-  font-size: 2rem;
-}
-
-.title h2 {
-  font-size: 1rem;
-}
-.section {
-  min-height: 600px;
-  height: auto;
-  padding: 10px;
-}
-.section h1 {
-  font-size: 2rem;
-}
-
-.section p {
-  font-size: 1rem;
-  text-align: justify;
-}
-
-.about-body {
-  width: 100%;
-  padding: 40px;
 }
 
 .column {
@@ -653,38 +475,8 @@ nav a {
   width: 100%;
 }
 
-.item {
-  width: 100%;
+.service-items {
+  width: 480px;
 }
 
-.contact-body {
-  width: 100%;
-}
-
-form {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.footer p {
-    font-size: 18px;
-}
-
-/* .imageContainer {
-    width: 100%;
-} */
-
-
-nav {
-padding: 5px;
-}
-
-.work-body {
-width: 90%;
-}
-
-.contact-body {
-width: 90%;
-}
 }
