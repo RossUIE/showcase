@@ -1,0 +1,59 @@
+#c-contact-form {
+    margin-top: 50px;
+    font: inherit;
+}
+
+label {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(41, 51, 71, 0.65);
+    display: block;
+    text-align: left;
+    padding-bottom: 3px;
+}
+  
+.optional {
+    font-size: 14px;
+}
+
+input {
+    border: 1px solid #e6ecf8;
+    color: #293347;
+    box-shadow: none;
+    font-weight: 300;
+    width: 100%;
+    padding: 12px 10px 11px 10px;
+    display: block;
+    font-size: inherit;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #e6ecf8;
+    color: #293347;
+    box-shadow: none;
+    font-weight: 300;
+    padding: 10px;
+    font-size: inherit;
+    border-radius: 8px;
+}
+input[type="submit"] {
+    border-radius: 50px;
+    background-color: transparent;
+    border-color: #84CBC5;
+    color: #84CBC5;
+    margin-top: 30px;
+    border-width: 2px;
+    max-width: 150px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+input[type="submit"]:hover {
+    background: #84CBC5;
+    color: #fff;
+    cursor: pointer;
+}
